@@ -1,6 +1,14 @@
 import React from "react";
 
-const Product = ({ product }) => {
+const Product = ({ product, cart = [], setCart }) => {
+  const addCart = () => {
+    setCart([...cart, product]);
+  };
+
+  const removeCart = () => {
+    setCart(cart.filter((item) => item.id !== product.id));
+  };
+
   return (
     <div className="w-11/12 md:w-1/2 mx-auto p-4">
       <div className="bg-gray-200 shadow-md rounded-md p-4">
@@ -15,9 +23,21 @@ const Product = ({ product }) => {
         <h2 className="text-xl font-semibold text-gray-600">
           ₹{product.price}
         </h2>
-        <button className="bg-slate-800 w-full text-white px-4 font-semibold py-2 rounded-md mt-4 hover:bg-slate-700">
-          Add To Cart
-        </button>
+        {cart.some((item) => item.id === product.id) ? (
+          <button
+            className="bg-red-800 w-full text-white px-4 font-semibold py-2 rounded-md mt-4 hover:bg-red-700"
+            onClick={removeCart}
+          >
+            Remove from Cart
+          </button>
+        ) : (
+          <button
+            className="bg-slate-800 w-full text-white px-4 font-semibold py-2 rounded-md mt-4 hover:bg-slate-700"
+            onClick={addCart}
+          >
+            Add To Cart
+          </button>
+        )}
       </div>
     </div>
   );
