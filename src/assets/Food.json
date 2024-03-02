@@ -1,28 +1,32 @@
 [
-    {
-      "id": 1,
-      "name": "Pizza",
-      "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-    },
-    {
-      "id": 2,
-      "name": "Burger",
-      "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-    },
-    {
-      "id": 3,
-      "name": "Sushi",
-      "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-    },
-    {
-      "id": 4,
-      "name": "Tacos",
-      "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-    },
-    {
-      "id": 5,
-      "name": "Pasta",
-      "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Pizza",
+    "price": 150,
+    "image": "https://www.onestalove.in/wp-content/uploads/2021/08/Home-Banner-Pizza.png"
+  },
+  {
+    "id": 2,
+    "name": "Burger",
+    "price": 120,
+    "image": "https://static.wixstatic.com/media/7971e4_db4e0b3c51ca4275a766075acdcfc5b7~mv2.png/v1/fill/w_372,h_322,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Original%20Chicken%20.png"
+  },
+  {
+    "id": 3,
+    "name": "Sushi",
+    "price": 100,
+    "image": "https://d2j6dbq0eux0bg.cloudfront.net/images/64910856/2522174412.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Tacos",
+    "price": 130,
+    "image": "https://www.polloregio.com/wp-content/uploads/2022/08/2022_Pollo_Regio_August00208-Edit-1-1024x682.png"
+  },
+  {
+    "id": 5,
+    "name": "Pasta",
+    "price": 80,
+    "image": "https://pastaevangelists.com/cdn/shop/files/pappardelle_recipes_600x.png?v=1669026633"
+  }
+]
