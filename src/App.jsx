@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Header />
+        <Header cart={cart} />
         <Routes>
           <Route path="/" element={<Home cart={cart} setCart={setCart} />} />
           <Route path="/cart" element={<Cart cart={cart} />} />

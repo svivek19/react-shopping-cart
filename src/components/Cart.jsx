@@ -22,7 +22,7 @@ const Cart = ({ cart }) => {
             </div>
             <div className="items-center mx-8 my-5">
               <h3 className="text-2xl">{product.name}</h3>
-              <p className="text-xl">${product.price} </p>
+              <p className="text-xl">${product.price}</p>
             </div>
           </div>
         ))}
