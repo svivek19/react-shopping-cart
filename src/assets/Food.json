@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "name": "Pizza",
+      "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    },
+    {
+      "id": 2,
+      "name": "Burger",
+      "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    },
+    {
+      "id": 3,
+      "name": "Sushi",
+      "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    },
+    {
+      "id": 4,
+      "name": "Tacos",
+      "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    },
+    {
+      "id": 5,
+      "name": "Pasta",
+      "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    }
+  ]
+  
