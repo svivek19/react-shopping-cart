@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { cartContext } from "./cartContext";
 
-const Cart = ({ cart }) => {
+const ViewCart = () => {
+  const { cart } = useContext(cartContext);
+
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
@@ -35,4 +38,4 @@ const Cart = ({ cart }) => {
   );
 };
 
-export default Cart;
+export default ViewCart;

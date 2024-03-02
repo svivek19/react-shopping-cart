@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { cartContext } from "./cartContext";
 
-const Header = ({ cart }) => {
+const Header = () => {
+  const { cart } = useContext(cartContext);
+
   return (
     <nav className="bg-slate-800 flex p-4 font-bold text-lg justify-between text-white items-center">
       <div>

@@ -2,21 +2,22 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
-import Cart from "./components/Cart";
+import ViewCart from "./components/ViewCart";
+import { cartContext } from "./components/cartContext";
 
 const App = () => {
   const [cart, setCart] = useState([]);
 
   return (
-    <>
+    <cartContext.Provider value={{ cart, setCart }}>
       <BrowserRouter>
-        <Header cart={cart} />
+        <Header />
         <Routes>
-          <Route path="/" element={<Home cart={cart} setCart={setCart} />} />
-          <Route path="/cart" element={<Cart cart={cart} />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<ViewCart />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </cartContext.Provider>
   );
 };
 

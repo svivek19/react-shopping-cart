@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { cartContext } from "./cartContext";
 
-const Product = ({ product, cart = [], setCart }) => {
+const Product = ({ product }) => {
+  const { cart, setCart } = useContext(cartContext);
+
   const addCart = () => {
     setCart([...cart, product]);
   };
